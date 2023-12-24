@@ -1,13 +1,11 @@
-.prose-code pre code .line-number {
-    position: absolute;
+.prose-code pre code .line::before {
+    content: attr(line);
+    color: green;
+    font-weight:bold;
     left: -4rem;
     width: 4rem;
     padding-right: 1rem;
     text-align: right;
-    opacity: 0.3;
+    opacity: 0.5;
     user-select: none;
-}
-
-.prose-code pre code .line-number::before {
-    content: attr(line);
 }
