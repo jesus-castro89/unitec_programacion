@@ -1,13 +1,13 @@
 export default defineNuxtConfig({
     extends: '@nuxt-themes/docus',
-    components: [
-        '~/node_modules/element-plus/**/*.vue'
-    ],
     css: [
         '~/assets/css/prose-code.css'
     ],
     devtools: {enabled: true},
-    modules: ['@nuxt/components', '@nuxt/content', '@element-plus/nuxt'],
+    modules: ['@nuxt/content', '@element-plus/nuxt'],
+    elementPlus: {
+        components:['ElButton']
+    },
     content: {
         highlight: {
             theme: 'dark-plus',
