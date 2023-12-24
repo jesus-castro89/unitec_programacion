@@ -1,11 +1,9 @@
-.prose-code pre code .line::before {
+.prose-code pre code .line:before {
     content: attr(line);
-    color: green;
-    font-weight:bold;
-    left: -4rem;
-    width: 4rem;
-    padding-right: 1rem;
+    width: 1rem;
+    margin-right: 1.25rem;
+    display: inline-flex;
     text-align: right;
-    opacity: 0.5;
-    user-select: none;
+    color: rgba(115,138,148,.4);
+    justify-content: flex-end;
 }
